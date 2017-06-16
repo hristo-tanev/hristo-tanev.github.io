@@ -30,6 +30,33 @@
         text-align: center;
       }
 
+      .fa-chevron-left {
+        left: 0;
+        position: absolute;
+        padding-top: 15%;
+        visibility: hidden;
+      }
+
+      section {
+        left: 0;
+        position: relative;
+      }
+
+      .paraphs:hover .fa-chevron-left {
+        visibility: visible;
+      }
+
+      .paraphs:hover .fa-chevron-right {
+        visibility: visible;
+      }
+
+      .fa-chevron-right {
+        right: 0;
+        position: absolute;
+        padding-top: 15%;
+        visibility: hidden;
+      }
+
       .occ {
         font-family: "Julius Sans One";
         font-size: 15px;
@@ -87,9 +114,13 @@
 
       <div class="content">
         <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <h3>About</h3>
-          i live in London (UK). recent comp sci grad. passionate web developer. stickler to best code practises. camper at freeCodeCamp.
+        <div class="paraphs col-md-4">
+          <a><i class="fa fa-chevron-left"></i></a>
+          <a><i class="fa fa-chevron-right"></i></a>
+          <section>
+            <h3>About</h3>
+            i live in London (UK). recent comp sci grad. passionate web developer. stickler to best code practises. camper at freeCodeCamp.
+          </section>
         </div>
         <div class="col-md-4"></div>
       </div>
