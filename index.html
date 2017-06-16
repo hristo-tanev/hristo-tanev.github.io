@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <script>
+      function moveRight() {
+        document.getElementById('a').style.display = 'none'
+        document.getElementById('p').style.display = 'block'
+      }
+
+      function moveLeft() {
+        document.getElementById('p').style.display = 'none'
+        document.getElementById('a').style.display = 'block'
+      }
+    </script>
     <style>
       a:link, a:visited, a:hover, a:active {
         color: black;
@@ -37,9 +48,10 @@
         visibility: hidden;
       }
 
-      section {
+      .about {
         left: 0;
         position: relative;
+        display: block;
       }
 
       .paraphs:hover .fa-chevron-left {
@@ -55,6 +67,12 @@
         position: absolute;
         padding-top: 15%;
         visibility: hidden;
+      }
+
+      .projects {
+        left: 0;
+        position: relative;
+        display: none;
       }
 
       .occ {
@@ -75,7 +93,7 @@
       }
 
       footer {
-        padding-top: 13%;
+        padding-top: 15%;
       }
 
       footer .col-md-4 {
@@ -115,11 +133,15 @@
       <div class="content">
         <div class="col-md-4"></div>
         <div class="paraphs col-md-4">
-          <a><i class="fa fa-chevron-left"></i></a>
-          <a><i class="fa fa-chevron-right"></i></a>
-          <section>
+          <a onclick="moveLeft()"><i class="fa fa-chevron-left"></i></a>
+          <a onclick="moveRight()"><i class="fa fa-chevron-right"></i></a>
+          <section id="a" class="about">
             <h3>About</h3>
             i live in London (UK). recent comp sci grad. passionate web developer. stickler to best code practises. camper at freeCodeCamp.
+          </section>
+          <section id="p" class="projects">
+            <h3>Projects</h3>
+            well, all my projects are on GitHub... Did you check that?
           </section>
         </div>
         <div class="col-md-4"></div>
