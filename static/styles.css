@@ -1,0 +1,94 @@
+a:link, a:visited, a:hover, a:active {
+  color: black;
+}
+
+.container {
+  padding-top: 7%;
+}
+
+h1 {
+  font-family: "Gloria Hallelujah";
+  color: #3D9970;
+}
+
+h3 {
+  font-family: "Gloria Hallelujah";
+  color: #354E71;
+}
+
+.content, small {
+  font-family: "Julius Sans One";
+  text-align: center;
+}
+
+.fa-chevron-left {
+  left: 0;
+  position: absolute;
+  padding-top: 15%;
+  visibility: hidden;
+}
+
+.about {
+  left: 0;
+  position: relative;
+  display: block;
+}
+
+.paraphs:hover .fa-chevron-left {
+  visibility: visible;
+}
+
+.paraphs:hover .fa-chevron-right {
+  visibility: visible;
+}
+
+.fa-chevron-right {
+  right: 0;
+  position: absolute;
+  padding-top: 15%;
+  visibility: hidden;
+}
+
+.projects {
+  left: 0;
+  position: relative;
+  display: none;
+}
+
+.occ {
+  font-family: "Julius Sans One";
+  font-size: 15px;
+}
+
+header .col-md-4 {
+  text-align: center !important;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+.fa-twitter:hover {
+  color: #55ACEE;
+}
+
+footer {
+  padding-top: 15%;
+}
+
+footer .col-md-4 {
+  text-align: center !important;
+}
+
+.fa-github {
+  padding-right: 3%;
+}
+
+.fa-linkedin {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.fa-twitter {
+  padding-left: 3%;
+}
