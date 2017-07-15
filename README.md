@@ -1,2 +1,5 @@
 # hristo-tanev.github.io
-> My personal webpage
+
+My personal portfolio webpage hosted on GitHub pages.
+
+http://hristo-tanev.gihub.io/
